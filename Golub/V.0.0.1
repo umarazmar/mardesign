@@ -1,0 +1,100 @@
+/*
+Theme Name       : Golub V.0.0.1
+Theme Published  : 11 Desember 2015
+Theme Updated    : 13 Desember 2015
+Theme Designer   : Umar Azmar MF
+Designer URL     : www.umarazmar.com
+Publisher URL    : theme.umarazmar.com
+Thanks to        : All supported
+Theme License    : This free Blogger template is licensed under the Creative Commons Attribution 3.0 License, which permits both personal and commercial use.
+However, to satisfy the 'attribution' clause of the license, you are required to keep the footer links intact which provides due credit to its authors. For more specific details about the license, you may visit the URL below: //creativecommons.org/licenses/by/3.0/*/
+
+/* CSS Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,adnav,adheader{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+/* CSS HTML5 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,adnav,adheader{display:block;}body{line-height:1;display:block;}*{margin:0;padding:0;}html{display:block;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{background:transparent;}table{border-collapse:collapse;border-spacing:0;}
+body{background:#fff;color:#222;font-family:'Roboto';font-size:16px;font-weight:400;line-height:1.6em;margin:0;padding:0;}
+body#layout ul,body#layout ul li{list-style-type:none;list-style:none}
+body#layout #header-wrapper,body#layout #content-wrapper,body#layout #footer-wrapper {width:100%}
+body#layout #header-left {min-height:0;float:left;width:30%;}
+body#layout #header-right {width:60%;float:right;}
+#main-wrapper{float:left;width:66.66666667%;word-wrap:break-word}
+#sidebar-wrapper{float:right;width:33.33333333%;}
+#footer-wrapper .footer-left{float:left;width:47%;}
+#footer-wrapper .footer-right{float:right;width:47%;}
+/* CSS Layout */
+*, input[type="search"] {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+a,button,input:focus,input[type="button"],input[type="reset"],input[type="submit"],textarea:focus,.button{transition:all .3s;}a{color:#e8635f;text-decoration:none}.widget {word-wrap:break-word;}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}input,select,textarea{background-color:#fff;border:1px solid #f0f0f0;color:#5a5a5a;font-weight:300;padding:10px 12px;width:100%}
+a:link,a:hover {color:#D75C37;text-decoration:none;}a:visited{color:#D75C37;text-decoration:underline}a img{border:none;border-width:0;outline:none;}
+img{max-width:100%;vertical-align:middle;border:0;height:auto;}.clear{clear:both;}.navbar,.quickedit,.post-feeds,.feed-links{display:none}.section{margin:0;}
+sup,sub{vertical-align:baseline;position:relative;top:-.4em;font-size:86%;}
+sub{top:.4em;}small{font-size:86%;}
+kbd {background:#fafafa;display:inline-block;border-radius:3px;padding:.1em .3em .2em .3em;margin:0 .2em;transition:all .3s;}
+kbd:hover{background:#f8f8f8;}cite,em,i{font-style:italic;}ul,dl{margin:.2em 0em .2em 1em}ol{list-style:decimal outside}ul{list-style:disc outside}li{margin:0}dt{font-weight:bold}dd{margin:0 0 .5em 2em}
+.post ul li span{position:relative;display:block;margin:0;padding:2px 5px;text-decoration:none;transition:all .3s ease-out}
+ol {counter-reset:li;list-style: none;padding:0;}.post-body li {list-style-type:square;}
+ol ol {margin:0 0 0 2em;}
+.post ol li{position:relative;display:block;padding:2px 0;margin:.2em 0 .2em 1.5em;background:#fff;color:#666;text-decoration:none;transition:all .3s;}
+.post ol li:before {content:counter(li);counter-increment:li;position:absolute;left:-2.5em;width:2em;text-align:center;}
+strong,b{font-weight:bold;}
+]]></b:skin>
+<style type='text/css'>
+
+/* Global Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<style type='text/css'>
+
+/* Home Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+  <b:else/>
+<style type='text/css'>
+
+/* Index Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+</b:if>
+  <b:else/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<style type='text/css'>
+
+/* Post Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+  <b:else/>
+<style type='text/css'>
+  
+/* Static Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+</b:if>
+</b:if>
