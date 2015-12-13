@@ -27,6 +27,16 @@ However, to satisfy the 'attribution' clause of the license, you are required to
 @media (max-width: 768px) {}
 </style>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
+<style type='text/css'>
+
+/* Full Index Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <style type='text/css'>
 
@@ -41,7 +51,7 @@ However, to satisfy the 'attribution' clause of the license, you are required to
   <b:else/>
 <style type='text/css'>
 
-/* Index Responsive */
+/* Index Responsive (except home) */
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
 @media (min-width:1200px) {}
@@ -51,6 +61,16 @@ However, to satisfy the 'attribution' clause of the license, you are required to
 </style>
 </b:if>
   <b:else/>
+<style type='text/css'>
+
+/* Full Non-Index Responsive*/
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <style type='text/css'>
 
