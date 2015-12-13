@@ -1,0 +1,77 @@
+/*
+Theme Name       : -
+Theme Published  : -
+Theme Updated    : -
+Theme Designer   : Umar Azmar MF
+Designer URL     : www.umarazmar.com
+Publisher URL    : theme.umarazmar.com
+Thanks to        : All supported
+Theme License    : This free Blogger template is licensed under the Creative Commons Attribution 3.0 License, which permits both personal and commercial use.
+However, to satisfy the 'attribution' clause of the license, you are required to keep the footer links intact which provides due credit to its authors. For more specific details about the license, you may visit the URL below: //creativecommons.org/licenses/by/3.0/*/
+
+/* CSS Reset */
+
+/* CSS HTML5 */
+
+/* CSS Layout */
+
+]]></b:skin>
+<style type='text/css'>
+
+/* Global Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<style type='text/css'>
+
+/* Home Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+  <b:else/>
+<style type='text/css'>
+
+/* Index Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+</b:if>
+  <b:else/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<style type='text/css'>
+
+/* Post Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+  <b:else/>
+<style type='text/css'>
+  
+/* Static Responsive */
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width:1200px) {}
+@media (max-width:1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+</style>
+</b:if>
+</b:if>
