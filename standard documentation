@@ -23,8 +23,10 @@ However, to satisfy the 'attribution' clause of the license, you are required to
 
 ]]></b:skin>
 <style type='text/css'>
+.clearfix{clear:both;display:table;content:&quot;&quot;}
 #header-wrapper,#content-wrapper,#footer-wrapper{padding:0 15px;margin:0 auto}
 
+#navigation{}
 #header-wrapper{}
 #content-wrapper{}
 #main-wrapper{}
@@ -128,6 +130,10 @@ function loadCSS(e, t, n) { 'use strict'; var i = window.document.createElement(
 <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
 <div id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
 </div>
+  <div class='clearfix'/>
+<nav id='navigation' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement'> 
+</nav>
+  <div class='clearfix'/>
 <div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
   <div id='main-wrapper'>
     <b:section class='main' id='main' showaddelement='no'>
@@ -135,9 +141,10 @@ function loadCSS(e, t, n) { 'use strict'; var i = window.document.createElement(
     </b:section>
   </div>
   <div id='sidebar-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPSideBar'>
-    <b:section class='sidebar' id='sidebar-1' preferred='yes' showaddelement='yes'/>
+    <b:section class='sidebar' id='sidebar' preferred='yes' showaddelement='yes'/>
   </div>
 </div>
+  <div class='clearfix'/>
 <div id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
 </div>
 </body>
