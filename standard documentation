@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<HTML>
+<head>
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!-- /*<b:skin><![CDATA[
 /*
 Theme Name       : -
 Theme Published  : -
@@ -17,11 +23,24 @@ However, to satisfy the 'attribution' clause of the license, you are required to
 
 ]]></b:skin>
 <style type='text/css'>
+#header-wrapper,#content-wrapper,#footer-wrapper{padding:0 15px;margin:0 auto}
+
+#header-wrapper{}
+#content-wrapper{}
+#main-wrapper{}
+#sidebar-wrapper{}
+#footer-wrapper{}
 
 /* Global Responsive */
-@media (min-width: 768px) {}
-@media (min-width: 992px) {}
-@media (min-width:1200px) {}
+@media (min-width: 768px) {
+#header-wrapper,#content-wrapper,#footer-wrapper{width:750px}
+}
+@media (min-width: 992px) {
+#header-wrapper,#content-wrapper,#footer-wrapper{width:970px;}
+}
+@media (min-width:1200px) {
+#header-wrapper,#content-wrapper,#footer-wrapper{width:1170px;}
+}
 @media (max-width:1200px) {}
 @media (max-width: 992px) {}
 @media (max-width: 768px) {}
@@ -95,3 +114,31 @@ However, to satisfy the 'attribution' clause of the license, you are required to
 </style>
 </b:if>
 </b:if>
+<script type='text/javascript'>
+//<![CDATA[
+function loadCSS(e, t, n) { 'use strict'; var i = window.document.createElement('link'); var o = t || window.document.getElementsByTagName('script')[0]; i.rel = 'stylesheet'; i.href = e; i.media = 'only x'; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || 'all' }) }loadCSS('//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');loadCSS('//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+//]]>
+</script>
+<!--[if lt IE 9]>
+    <script src='//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <script src='//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+<![endif]-->
+</head>
+<!-- <body><div></div> -->
+<body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
+<div id='header-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
+</div>
+<div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
+  <div id='main-wrapper'>
+    <b:section class='main' id='main' showaddelement='no'>
+      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+    </b:section>
+  </div>
+  <div id='sidebar-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPSideBar'>
+    <b:section class='sidebar' id='sidebar-1' preferred='yes' showaddelement='yes'/>
+  </div>
+</div>
+<div id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
+</div>
+</body>
+</HTML>
